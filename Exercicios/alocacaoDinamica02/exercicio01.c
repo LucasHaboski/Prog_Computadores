@@ -52,7 +52,7 @@ int main(){
     printf("PRIMEIRA MATRIZ:\n");
     for(i = 0; i < linha; i++){
         for(j = 0; j < coluna; j++){
-            printf("%.2lf ", m[i][j]);
+            printf("%.1lf ", m[i][j]);
         }
         printf("\n");
     }
@@ -62,7 +62,7 @@ int main(){
     printf("SEGUNDA MATRIZ:\n");
     for(i = 0; i < linha; i++){
         for(j = 0; j < coluna; j++){
-            printf("%.2lf ", n[i][j]);
+            printf("%.1lf ", n[i][j]);
         }
         printf("\n");
     }
