@@ -15,7 +15,7 @@ int main(){
 
     printf("====================================\n");
 
-    vetor = (int *) malloc (sizeof(int));
+    vetor = (int *) malloc (tamanho * sizeof(int));
 
     for(i=0; i < tamanho; i++){
         printf("Digite o valor do vetor [%d]: ", i+1);
@@ -28,7 +28,7 @@ int main(){
 
     printf("====================================\n");
 
-    vetor = realloc(vetor, novoTamanho*sizeof(int));
+    vetor = (int *) realloc(vetor, (tamanho+novoTamanho) * sizeof(int));
 
     for (i = tamanho; i < tamanho+novoTamanho; i++){
         printf("Digite o valor do vetor [%d]: ", i+1);
